@@ -16,7 +16,10 @@
   <main class="container">
     <div class="card">
       <div class="card__header">
-        <img src="./images/image-header-mobile.jpg" alt="image header">
+        <picture>
+          <source srcset="./images/image-header-desktop.jpg" media="(min-width:1020px)" />
+          <img src="./images/image-header-mobile.jpg" alt="image header">
+        </picture>
       </div>
       <div class="card__body">
         <h1>Get <span class="card__body__heading-highlighter">insights</span> that help your business grow.</h1>
@@ -24,17 +27,19 @@
         <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
           experience, and overall efficiency.</p>
 
-        <div class="stats-one">
-          <h2>10k+</h2>
-          <p>companies</p>
-        </div>
-        <div class="stats-two">
-          <h2>314</h2>
-          <p>templates</p>
-        </div>
-        <div class="stats-three">
-          <h2>12M+</h2>
-          <p>queries</p>
+        <div class="stats-container">
+          <div class="stats-one">
+            <h2>10k+</h2>
+            <p>companies</p>
+          </div>
+          <div class="stats-two">
+            <h2>314</h2>
+            <p>templates</p>
+          </div>
+          <div class="stats-three">
+            <h2>12M+</h2>
+            <p>queries</p>
+          </div>
         </div>
       </div>
     </div>

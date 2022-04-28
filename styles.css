@@ -49,7 +49,7 @@ body {
     opacity: 0.4;
 }
 
-.card__header>img {
+.card__header>picture>img {
     border-radius: 12px 12px 0 0;
     width: 100%;
 }
@@ -108,4 +108,45 @@ body {
 
 .attribution a {
     color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 1024px;
+        display: flex;
+        text-align: left;
+    }
+
+    .card__header {
+        order:2;
+        flex-basis: 110%;
+    }
+
+    .card__header>picture>img{
+        height: 100%;
+        border-radius: 0 12px 12px 0;
+    }
+
+    .card__header::after {
+        border-radius: 0 12px 12px 0;
+        bottom: 0;
+    }
+
+    .card__body {
+        padding: 64px 142px 64px 48px;
+    }
+
+    .card__body>h1 {
+        margin-bottom: 32px;
+    }
+
+    .card__body>p{
+        padding: 0;
+        margin-bottom: 72px;
+    }
+
+    .stats-container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
